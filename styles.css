@@ -1,0 +1,164 @@
+html, body  {
+    font-family: "Yu Gothic Medium", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+}
+header, footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #f0f4f8;
+}
+header {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+}
+footer {
+    box-shadow: 0 -4px 4px rgba(0, 0, 0, .1);
+}
+#header-content, #footer-content {
+    width: 100%;
+    padding: 20px;
+}
+.ribbon-toggle {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    font-size: 16px;
+}
+header .ribbon-toggle {
+    bottom: 3px;
+}
+footer .ribbon-toggle {
+    top: 3px;
+}
+header.ribbon-collapsed, footer.ribbon-collapsed {
+    min-height: 20px;
+    max-height: 20px;
+}
+header.ribbon-collapsed #header-content, 
+footer.ribbon-collapsed #footer-content {
+    transform: translateY(-100%);
+    display: none;
+}
+main {
+    flex-grow: 1;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 20px;
+    margin: 2px 0;
+}
+#main-content {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+/* buttons */
+.blue-button {
+    background-color: #3498db;
+}
+.blue-button:hover {
+    background-color: #2980b9;
+}
+.red-button {
+    background-color: #e74c3c;
+}
+.red-button:hover {
+    background-color: #c0392b;
+}
+.yellow-button {
+    background-color: #f1c40f;
+}
+.yellow-button:hover {
+    background-color: #f39c12;
+}
+.green-button {
+    background-color: #2ecc71;
+}
+.green-button:hover {
+    background-color: #27ae60;
+}
+.purple-button {
+    background-color: #9b59b6;
+}
+.purple-button:hover {
+    background-color: #8e44ad;
+}
+.orange-button {
+    background-color: #e67e22;
+}
+.orange-button:hover {
+    background-color: #d35400;
+}
+.cyan-button {
+    background-color: #1abc9c;
+}
+.cyan-button:hover {
+    background-color: #16a085;
+}
+.pink-button {
+    background-color: #e91e63;
+}
+.pink-button:hover {
+    background-color: #c2185b;
+}
+.teal-button {
+    background-color: #009688;
+}
+.teal-button:hover {
+    background-color: #00796b;
+}
+.indigo-button {
+    background-color: #3f51b5;
+}
+.indigo-button:hover {
+    background-color: #303f9f;
+}
+.lime-button {
+    background-color: #cddc39;
+}
+.lime-button:hover {
+    background-color: #afb42b;
+}
+.gray-button {
+    background-color: #95a5a6;
+}
+.gray-button:hover {
+    background-color: #7f8c8d;
+}

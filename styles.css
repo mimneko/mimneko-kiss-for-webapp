@@ -61,7 +61,6 @@ main {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
-    min-height: 100%;
 }
 button {
     padding: 10px 20px;
